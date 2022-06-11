@@ -298,13 +298,44 @@ nav img {
 
 /* -------- FORM -------- */
 
-form {
-    margin: 37px 0 49px;
-    display: flex;
+/* 
+.formWrapper div:not(.checkIn, .buchen) {
+    border: 1px solid var(--camperOrangeHover);
+    border-radius: 30px;
 }
 
-.booking {
+.checkIn, .buchen {
     display: flex;
-    background-color:red;
+    justify-content: space-between;
+    gap: 20px;
 }
 
+.checkIn p:first-of-type {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 8px;
+    color: var(--camperOrange);
+}
+
+.checkIn p:last-of-type {
+    font-family: 'Sora';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--camperGrey100);
+}
+
+.check {
+    width: 103.5px;
+    height:33px;
+    padding:8px 8px 0 8px;
+}
+
+.personen {
+    width: 58px;
+    display: flex;
+    flex-direction: column;
+    padding:8px 8px 0 8px;
+
+} */
