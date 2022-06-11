@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Sora:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------- ALLGEMEINES STYLING ------- */
+
+:root {
+    --camperOrange: #FF7144;
+    --camperGrey100: #666666;
+    --camperGrey: #A7A7A7;
+    --camperBlack: #1A1A1A;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    color: var(--camperBlack);
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-family: 'Sora';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--camperGrey100);
+    margin-bottom: 24px;   
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 9px;
+    letter-spacing: 2px;
+    color: var(--camperOrange);
+}
+
+h4 {
+    font-family: 'Sora', sans-serif;    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;    
+    margin-bottom:16px;
+}
+
+main {
+    max-width: 576px;
+}
+/* ------ NAV BAR ------ */
+#click {
+    width: 48px;
+    height: 48px;
+    background-color: var(--camperOrange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: 50px;
+    overflow: hidden;
+    position: fixed;
+    right:10px;
+    top: 89vh;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 5px;
+}
+nav ul li {
+    width: 48px;
+    height: 48px;
+    background-color: var(--camperOrange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+nav img {
+    width: 100%;
+}
+
+.navFlow {
+    overflow: visible;
+}
+
+/* ------- SECTION ------ */
+
+.wohnenImGut {
+    background: url(../img/Wohnen-im-Gut-Base.png) no-repeat;
+    background-size: cover;
+    height: 251.51px;
+}
+
+.wohnenImGut img {
+    margin: 161px 0 60.5px 39px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 12px;
+    margin-top: -20px;
+    padding: 32px 39px;
+}
+
+.result {
+    border: 1px solid var(--camperOrange);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 16px;
+}
+
+.result p:last-of-type {
+    font-family: 'Sora', sans-serif;    
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--camperGrey100);
+}
+
+
+.personen {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 9px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.personen p:last-of-type {
+    color: var(--camperGrey);
+}
