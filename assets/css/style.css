@@ -10,6 +10,7 @@
 
 :root {
     --camperOrange: #FF7144;
+    --camperOrangeHover: #FF9635;
     --camperGrey100: #666666;
     --camperGrey: #A7A7A7;
     --camperBlack: #1A1A1A;
@@ -49,12 +50,14 @@ h4 {
     font-size: 16px;
     line-height: 22px;    
     margin-bottom:16px;
+    color: var(--camperBlack);
 }
 
 main {
     max-width: 576px;
 }
 /* ------ NAV BAR ------ */
+
 #click {
     width: 48px;
     height: 48px;
@@ -73,7 +76,7 @@ nav {
     overflow: hidden;
     position: fixed;
     right:10px;
-    top: 89vh;
+    top: 92vh;
 }
 
 nav ul {
@@ -91,8 +94,13 @@ nav ul li {
     border-radius: 50px;
 }
 
+
 nav img {
     width: 100%;
+}
+
+.active2 {
+    display: none !important;
 }
 
 .navFlow {
@@ -100,6 +108,11 @@ nav img {
 }
 
 /* ------- SECTION ------ */
+.weingutHaas {
+    background: url(../img/Weingut-Base.png) no-repeat;
+    background-size: cover;
+    height: 251.51px;
+}
 
 .wohnenImGut {
     background: url(../img/Wohnen-im-Gut-Base.png) no-repeat;
@@ -107,7 +120,22 @@ nav img {
     height: 251.51px;
 }
 
+.dachgeschoss {
+    background: url(../img/Dachgeschoss.png) no-repeat;
+    background-size: cover;
+    height: 251.51px;
+}
+
+.verlinkung {
+    text-decoration:none !important;
+    color: inherit !important;
+}
+
 .wohnenImGut img {
+    margin: 161px 0 60.5px 39px;
+}
+
+.dachgeschoss img {
     margin: 161px 0 60.5px 39px;
 }
 
@@ -125,7 +153,7 @@ nav img {
     padding: 16px;
 }
 
-.result p:last-of-type {
+.result h4+p:last-of-type {
     font-family: 'Sora', sans-serif;    
     font-style: normal;
     font-weight: 300;
@@ -149,3 +177,134 @@ nav img {
 .personen p:last-of-type {
     color: var(--camperGrey);
 }
+
+.icons {
+    margin-bottom: 23px;
+}
+
+.icons, .icons div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 17px;
+}
+
+.icons div:first-of-type p {
+    padding: 6px 12px;
+    height: 28px;
+    border: 1px solid #D3D3D3;
+    border-radius: 30px;
+    font-family: 'Sora';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.icons div:first-of-type p:first-of-type {
+    width: 60px;
+}
+
+.icons div:first-of-type p:last-of-type {
+    width: 107px;
+}
+
+
+/* ------- KARUSELL------- */
+
+#karusell {
+    display: flex;  
+    align-items: center; 
+    margin-bottom:36px;
+}
+
+#karusell img:nth-of-type(2) {
+    border-radius: 15px;
+    height: 240px;
+}
+
+#karusell img:nth-of-type(1) {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 200px;
+}
+
+#karusell img:nth-of-type(3) {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 200px;
+}
+
+#karusell img:nth-of-type(2){
+    margin: 0 16px;
+}
+
+/* -------- Extra Section ----- */
+
+.extra {
+    padding-left: 39px;
+}
+
+.extra >p {
+    margin-bottom: 36px;
+}
+
+.wrapperExtra {
+    display:flex;
+    border-bottom: 1px solid #E9E9E9;
+    padding: 16px 0;
+}
+
+.wrapperExtra div:first-of-type {
+    display:flex;
+    align-items: center;    
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-right: 16px;
+}
+
+.wrapperExtra:first-of-type {
+    padding-top: 0;
+}
+
+.wrapperExtra:last-of-type {
+    border-bottom: none;
+}
+
+.extra > p {
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+
+.wrapperExtra div:last-of-type p:first-of-type {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.wrapperExtra div:last-of-type p:last-of-type {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 4px;
+}
+
+/* -------- FORM -------- */
+
+form {
+    margin: 37px 0 49px;
+    display: flex;
+}
+
+.booking {
+    display: flex;
+    background-color:red;
+}
+

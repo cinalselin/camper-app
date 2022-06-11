@@ -12,20 +12,22 @@
 <body>
     <nav id="navbar">
         <ul>
-            <li><a href="#"> <img src="./assets/img/nav-location.svg" alt=""></a></li>
-            <li><a href="#"> <img src="./assets/img/nav-fav.svg" alt=""></a></li>
-            <li><a href="#"> <img src="./assets/img/nav-account.svg" alt=""></a></li>
-            <li><a href="#"> <img src="./assets/img/nav-roulette.svg" alt=""></a></li>
-            <li><a href="#"> <img src="./assets/img/nav-arrow.svg" alt=""></a></li>
-            <div id="click" onclick="change()">
-                <a href="#"> <img src="./assets/img/white-burger.svg" alt=""></a>
+            <li><a href="#"> <img src="./assets/img/nav-location.svg" alt="location icon"></a></li>
+            <li><a href="#"> <img src="./assets/img/nav-fav.svg" alt="fav icon"></a></li>
+            <li><a href="#"> <img src="./assets/img/nav-account.svg" alt="profile icon"></a></li>
+            <li><a href="#"> <img src="./assets/img/nav-roulette.svg" alt="roulette icon"></a></li>
+            <li><a href="#"> <img src="./assets/img/nav-arrow.svg" alt="arrow icon"></a></li>
+            <li id="menuX"><a href="#"> <img src="./assets/img/nav-x.svg" alt="x icon"></a>
+            </li>
+            <div id="click" onclick="change(event)">
+                <a href="#" id="navChange"> <img src="./assets/img/white-burger.svg" alt="burger menu"></a>
             </div>
         </ul>
 
     </nav>
     <main>
         <div class="wohnenImGut">
-            <a href="#"><img src="./assets/img/Back.svg" alt="back-icon"> </a>
+            <a href="./weingutHaas.html"><img src="./assets/img/Back.svg" alt="back-icon"> </a>
         </div>
         <section class="container">
             <div class="intro">
@@ -34,14 +36,16 @@
                 <h2>Wir haben 3 Zimmer in unserem schönen Gutshaus zur verfügung. Sie sind schön und simple eingerichtet
                 </h2>
             </div>
-            <div class="result">
-                <div class="personen">
-                    <p>2 Personen</p>
-                    <p>1 verfügbar</p>
+            <a href="./dachgeschoss.html" class="verlinkung">
+                <div class="result">
+                    <div class="personen">
+                        <p>2 Personen</p>
+                        <p>1 verfügbar</p>
+                    </div>
+                    <h4>Dachgeschoss</h4>
+                    <p>Supporting or descriptive text for the card goes here. Nam libero tempore cum soluta.</p>
                 </div>
-                <h4>Dachgeschoss</h4>
-                <p>Supporting or descriptive text for the card goes here. Nam libero tempore cum soluta.</p>
-            </div>
+            </a>
             <div class="result">
                 <div class="personen">
                     <p>4-6 Personen</p>
