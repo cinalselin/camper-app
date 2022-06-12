@@ -92,6 +92,8 @@ nav {
     display: none;
 }
 
+
+
 nav ul {
     display: flex;
     list-style-type: none;
@@ -108,10 +110,13 @@ nav ul li {
     border-radius: 50px;
 }
 
-nav ul li:hover {
+nav ul li:hover:not(#menuX) {
     background-color: var(--camperOrangeHover);
 }
 
+#menuX {
+    background: rgba(255, 113, 68, 0.6);
+}
 nav img {
     width: 100%;
 }
