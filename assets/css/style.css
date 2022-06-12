@@ -298,19 +298,36 @@ nav img {
 
 /* -------- FORM -------- */
 
-/* 
-.formWrapper div:not(.checkIn, .buchen) {
-    border: 1px solid var(--camperOrangeHover);
-    border-radius: 30px;
-}
-
-.checkIn, .buchen {
+.form {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    align-items: center;
 }
 
-.checkIn p:first-of-type {
+.form:last-of-type {
+    margin-top:29.5px;
+}
+
+.check {
+    border: 1px solid var(--camperOrange);
+    border-radius: 12px;
+    padding: 6px 5px;
+    height: 32px;
+}
+.check img {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.check:not(:last-child) {
+    width: 103.5px;
+}
+
+.check:last-of-type {
+    padding: 6px 16px;
+}
+
+.check p:first-of-type {
     font-family: 'Nunito';
     font-weight: 400;
     font-size: 6px;
@@ -318,7 +335,26 @@ nav img {
     color: var(--camperOrange);
 }
 
-.checkIn p:last-of-type {
+.check p:last-of-type {
+    font-family: 'Sora';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #4F4F4F;
+}
+
+.buchen {
+}
+
+.buchen p:first-of-type {
+    font-family: 'Sora';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4F4F4F;
+}
+
+.buchen p:last-of-type {
     font-family: 'Sora';
     font-weight: 300;
     font-size: 12px;
@@ -326,16 +362,23 @@ nav img {
     color: var(--camperGrey100);
 }
 
-.check {
-    width: 103.5px;
-    height:33px;
-    padding:8px 8px 0 8px;
+button {
+    padding: 6px 28px;
+    width: 118px;
+    height: 42px;
+    background-color: var(--camperOrange);
+    border-radius: 60px;
+    border: none;
+    color: white;
 }
 
-.personen {
-    width: 58px;
-    display: flex;
-    flex-direction: column;
-    padding:8px 8px 0 8px;
+button:hover {
+    background: linear-gradient(0deg, rgba(255, 150, 53, 0.5), rgba(255, 150, 53, 0.5)), #FF7144;
+}
 
-} */
+button p {
+    font-family: 'Sora';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
