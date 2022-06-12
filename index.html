@@ -12,16 +12,17 @@
 <body>
     <nav id="navbar">
         <ul>
-            <li><a href="#"> <img src="./assets/img/nav-location.svg" alt="location icon"></a></li>
-            <li><a href="#"> <img src="./assets/img/nav-fav.svg" alt="fav icon"></a></li>
-            <li><a href="#"> <img src="./assets/img/nav-account.svg" alt="profile icon"></a></li>
-            <li><a href="#"> <img src="./assets/img/nav-roulette.svg" alt="roulette icon"></a></li>
-            <li><a href="#"> <img src="./assets/img/nav-arrow.svg" alt="arrow icon"></a></li>
-            <li id="menuX"><a href="#"> <img src="./assets/img/nav-x.svg" alt="x icon"></a>
+            <li><a href="#" class="navIcon"> <img src="./assets/img/nav-location.svg" alt="location icon"></a></li>
+            <li><a href="#" class="navIcon"> <img src="./assets/img/nav-fav.svg" alt="fav icon"></a></li>
+            <li><a href="#" class="navIcon"> <img src="./assets/img/nav-account.svg" alt="profile icon"></a></li>
+            <li><a href="#" class="navIcon"> <img src="./assets/img/nav-roulette.svg" alt="roulette icon"></a></li>
+            <li><a href="#" class="navIcon"> <img src="./assets/img/nav-arrow.svg" alt="arrow icon"></a></li>
+            <li id="menuX" class="navIcon" onclick="changeX(event)"><a href="#"> <img src="./assets/img/nav-x.svg"
+                        alt="x icon"></a>
             </li>
-            <div id="click" onclick="change(event)">
+            <li id="click" onclick="change(event)">
                 <a href="#" id="navChange"> <img src="./assets/img/white-burger.svg" alt="burger menu"></a>
-            </div>
+            </li>
         </ul>
 
     </nav>

@@ -58,7 +58,7 @@ main {
 }
 /* ------ NAV BAR ------ */
 
-#click {
+/* #click {
     width: 48px;
     height: 48px;
     background-color: var(--camperOrange);
@@ -66,17 +66,30 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-}
+} */
 
 nav {
     display: flex;
     align-items: center;
     justify-content:flex-end;
     width: 50px;
-    overflow: hidden;
     position: fixed;
     right:10px;
     top: 92vh;
+    overflow: hidden;
+    width: 50px;
+}
+
+.iconShow {
+    overflow: visible;
+}
+
+.burger {
+    overflow: hidden;
+}
+
+.active2 {
+    display: none;
 }
 
 nav ul {
@@ -84,6 +97,7 @@ nav ul {
     list-style-type: none;
     gap: 5px;
 }
+
 nav ul li {
     width: 48px;
     height: 48px;
@@ -94,18 +108,15 @@ nav ul li {
     border-radius: 50px;
 }
 
+nav ul li:hover {
+    background-color: var(--camperOrangeHover);
+}
 
 nav img {
     width: 100%;
 }
 
-.active2 {
-    display: none !important;
-}
 
-.navFlow {
-    overflow: visible;
-}
 
 /* ------- SECTION ------ */
 .weingutHaas {
@@ -219,7 +230,6 @@ nav img {
 
 #karusell img:nth-of-type(2) {
     border-radius: 15px;
-    height: 240px;
 }
 
 #karusell img:nth-of-type(1) {
@@ -320,7 +330,7 @@ nav img {
 }
 
 .check:not(:last-child) {
-    width: 103.5px;
+    padding: 6px 24px 6px 16px;
 }
 
 .check:last-of-type {
@@ -341,9 +351,6 @@ nav img {
     font-size: 12px;
     line-height: 16px;
     color: #4F4F4F;
-}
-
-.buchen {
 }
 
 .buchen p:first-of-type {
